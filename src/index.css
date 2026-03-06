@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+/* Enable class-based dark mode */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-josefin : "Josefin Sans", sans-serif;
+  --color-border-checkbox : hsl(236, 9%, 61%);
+}
+
+.container{
+  @apply min-w-screen min-h-screen flex flex-col items-center bg-contain bg-no-repeat bg-gray-200 dark:bg-gray-900 
+          bg-[url('/images/bg-mobile-light.jpg')] dark:bg-[url('/images/bg-mobile-dark.jpg')]
+          md:bg-[url('/images/bg-desktop-light.jpg')] dark:md:bg-[url('/images/bg-desktop-dark.jpg')] 
+}
+
+.todo-input{
+  @apply dark:bg-gray-800 dark:text-gray-300 text-gray-600 border-none outline-0 w-[19rem] md:w-sm
+}
+
+.checkbox{
+  @apply rounded-[50%] px-2.5 py-2.5 border border-gray-300 mr-5 cursor-pointer dark:border-gray-600 
+}
+.gradient-checkbox{
+  @apply border-none rounded-[50%] py-[11px] px-[11px] mr-5 cursor-pointer bg-[url('/images/icon-check.svg'),linear-gradient(to_bottom_right,#57ddff,#c058f3)] bg-no-repeat bg-center 
+}
+
+.container-of-todos{
+  @apply bg-gray-300 rounded-sm shadow-xl/10 dark:bg-gray-900 dark:text-gray-50 relative overflow-auto scroll-smooth max-h-[25rem]
+}
+.todo-list-block{
+  @apply flex flex-row justify-between p-4 border border-t-0 border-l-0 border-r-0 border-b-gray-300 dark:border-b-gray-600 bg-white dark:bg-gray-800
+}
+.todo-completed{
+  @apply line-through text-gray-600 dark:text-gray-300 w-[18rem] md:w-[23rem]
+}
+.todo-not-completed{
+  @apply text-gray-600 dark:text-gray-300 w-[18rem] md:w-[23rem]
+}
+
+.todo-footer{
+    @apply flex justify-between items-center text-sm p-4 sticky bottom-0 text-gray-600 dark:text-gray-50 bg-white dark:bg-gray-800
+}
+
+.footer-btn{
+  @apply text-gray-400 cursor-pointer hover:text-gray-800 hover:dark:text-white focus:text-sky-500 text-[12px] md:text-sm
+}
