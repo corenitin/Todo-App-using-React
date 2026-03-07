@@ -32,10 +32,10 @@
   @apply flex flex-row justify-between p-4 border border-t-0 border-l-0 border-r-0 border-b-gray-300 dark:border-b-gray-600 bg-white dark:bg-gray-800
 }
 .todo-completed{
-  @apply line-through text-gray-600 dark:text-gray-300 w-[18rem] md:w-[23rem]
+  @apply line-through text-gray-600 dark:text-gray-300 w-[16rem] md:w-[23rem]
 }
 .todo-not-completed{
-  @apply text-gray-600 dark:text-gray-300 w-[18rem] md:w-[23rem]
+  @apply text-gray-600 dark:text-gray-300 w-[16rem] md:w-[23rem]
 }
 
 .todo-footer{

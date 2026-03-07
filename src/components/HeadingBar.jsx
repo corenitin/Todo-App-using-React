@@ -7,7 +7,7 @@ export default function HeadingBar({setDark, dark}) {
             </span>
             <img
                 onClick={() => setDark(!dark)}
-                src={dark ? "../../public/images/icon-sun.svg" : "../../public/images/icon-moon.svg"}
+                src={dark ? "images/icon-sun.svg" : "images/icon-moon.svg"}
                 alt={dark ? "sun" : "moon"}
                 className="w-6 h-6 cursor-pointer"
             />

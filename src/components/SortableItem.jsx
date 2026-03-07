@@ -34,7 +34,7 @@ export default function SortableItem({ todoValue, index, toggleTodo, deleteTodo 
       </div>
 
       <img
-        src="/images/icon-cross.svg"
+        src="images/icon-cross.svg"
         alt="cross icon"
         className="w-4 h-4 cursor-pointer"
         onClick={() => deleteTodo(todoValue.id)}

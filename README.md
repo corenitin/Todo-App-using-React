@@ -12,10 +12,6 @@
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
   - [AI Collaboration](#ai-collaboration)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -37,8 +33,6 @@ Users should be able to:
 
 ![Mobile View](./public/images/mobile-view.png)
 ![Desktop View](./public/images/desktop-view.png)
-
-
 
 ### Links
 
