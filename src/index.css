@@ -26,7 +26,7 @@
 }
 
 .container-of-todos{
-  @apply bg-gray-300 rounded-sm shadow-xl/10 dark:bg-gray-900 dark:text-gray-50 relative overflow-auto scroll-smooth max-h-[25rem]
+  @apply bg-gray-300 rounded-sm shadow-xl/10 dark:bg-gray-900 dark:text-gray-50 md:relative overflow-auto scroll-smooth max-h-[25rem]
 }
 .todo-list-block{
   @apply flex flex-row justify-between p-4 border border-t-0 border-l-0 border-r-0 border-b-gray-300 dark:border-b-gray-600 bg-white dark:bg-gray-800
@@ -39,9 +39,13 @@
 }
 
 .todo-footer{
-    @apply flex justify-between items-center text-sm p-4 sticky bottom-0 text-gray-600 dark:text-gray-50 bg-white dark:bg-gray-800
+    @apply flex justify-between items-center text-sm p-4 sticky bottom-12 md:bottom-0 text-gray-600 dark:text-gray-50 bg-white dark:bg-gray-800 z-10
 }
 
 .footer-btn{
-  @apply text-gray-400 cursor-pointer hover:text-gray-800 hover:dark:text-white focus:text-sky-500 text-[12px] md:text-sm
+  @apply text-gray-400 cursor-pointer hover:text-gray-800 hover:dark:text-white focus:text-sky-500 text-[12px] md:text-sm z-10
+}
+
+.mobile-extended-footer{
+  @apply md:hidden flex justify-center gap-4 bg-white dark:bg-gray-800 p-4 rounded-sm mt-4 sticky bottom-0
 }

@@ -12,7 +12,7 @@ export default function Footer({
             {/* MAIN FOOTER */}
             <div className="todo-footer">
 
-                <span className="text-gray-400 dark:text-gray-600 text-[12px] md:text-sm">
+                <span className="text-gray-300 dark:text-gray-600 text-[12px] md:text-sm">
                     {activeCount} items left
                 </span>
 
@@ -29,7 +29,7 @@ export default function Footer({
             </div>
 
             {/* MOBILE FILTERS */}
-            <div className="md:hidden flex justify-center gap-4 bg-white dark:bg-gray-800 p-4 rounded-sm mt-4">
+            <div className="mobile-extended-footer">
                 <button className="footer-btn" onClick={allTodos}>All</button>
                 <button className="footer-btn" onClick={activeTodos}>Active</button>
                 <button className="footer-btn" onClick={completedTodos}>Completed</button>

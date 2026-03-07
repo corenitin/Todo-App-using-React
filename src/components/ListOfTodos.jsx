@@ -5,8 +5,9 @@ import Footer from "./Footer";
 
 
 export default function LisOfTodos({ todos, handleDragEnd, filteredTodos, toggleTodo, deleteTodo, allTodos, activeTodos, completedTodos, clearTodos }) {
+    if (todos.length === 0) return null;
     return (
-        <div className={`${todos === null ? 'hidden' : 'container-of-todos'} `}>
+        <div className="container-of-todos">
             <DndContext onDragEnd={handleDragEnd}>
                 <SortableContext
                     items={todos.map((t) => t.id)}
